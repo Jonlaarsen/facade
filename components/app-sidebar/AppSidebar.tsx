@@ -42,7 +42,7 @@ const items = [
     icon: <Fa42Group />,
   },
   { title: "Summer 2024", urls: ["2025", "2024", "2023"], icon: <FaHeart /> },
-  { title: "Winter 2024", urls: ["2025", "2024", "2023"], icon: <Fa5 /> },
+  { title: "Winter 2023", urls: ["2025", "2024", "2023"], icon: <Fa5 /> },
 ];
 
 export function AppSidebar() {
