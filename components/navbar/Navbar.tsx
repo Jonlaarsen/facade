@@ -16,6 +16,9 @@ const Navbar = () => {
         <a className="text-red-500 font-bold hover:text-red-400 transition-colors">
           SALE!
         </a>
+        <Link href="/products" className="hover:text-red-500 transition-colors">
+          Products
+        </Link>
         <Link
           href="/products?category=Skateboards"
           className="hover:text-red-500 transition-colors"
@@ -27,9 +30,6 @@ const Navbar = () => {
           className="hover:text-red-500 transition-colors"
         >
           Clothing
-        </Link>
-        <Link href="/products" className="hover:text-red-500 transition-colors">
-          Products
         </Link>
         <Link href="/" className="hover:text-red-500 transition-colors">
           Home

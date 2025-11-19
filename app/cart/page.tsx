@@ -17,8 +17,8 @@ export default function CartPage() {
 
   if (cartItems.length === 0) {
     return (
-      <div className="min-h-screen bg-zinc-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="min-h-screen  bg-zinc-100">
+        <div className="max-w-7xl mt-10 mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Link href="/">
             <Button variant="ghost" className="mb-6">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -44,7 +44,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-100">
+    <div className="min-h-screen mt-10 bg-zinc-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Link href="/">
           <Button variant="ghost" className="mb-6">
@@ -114,26 +114,20 @@ export default function CartPage() {
                           variant="ghost"
                           size="icon"
                           onClick={() =>
-                            updateQuantity(
-                              item.product.id,
-                              item.quantity - 1
-                            )
+                            updateQuantity(item.product.id, item.quantity - 1)
                           }
                           className="h-8 w-8 rounded-none"
                         >
                           <Minus className="h-4 w-4" />
                         </Button>
-                        <span className="px-4 py-1 text-sm font-semibold min-w-[3rem] text-center">
+                        <span className="px-4 py-1 text-sm font-semibold min-w-12 text-center">
                           {item.quantity}
                         </span>
                         <Button
                           variant="ghost"
                           size="icon"
                           onClick={() =>
-                            updateQuantity(
-                              item.product.id,
-                              item.quantity + 1
-                            )
+                            updateQuantity(item.product.id, item.quantity + 1)
                           }
                           className="h-8 w-8 rounded-none"
                         >
@@ -143,7 +137,8 @@ export default function CartPage() {
 
                       <div className="flex items-center gap-4">
                         <p className="text-lg font-semibold text-black">
-                          ${(
+                          $
+                          {(
                             parseFloat(item.product.price.replace("$", "")) *
                             item.quantity
                           ).toFixed(2)}
@@ -199,7 +194,11 @@ export default function CartPage() {
                 Proceed to Checkout
               </Button>
               <Link href="/">
-                <Button variant="outline" size="lg" className="w-full mt-4 uppercase">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full mt-4 uppercase"
+                >
                   Continue Shopping
                 </Button>
               </Link>
@@ -210,4 +209,3 @@ export default function CartPage() {
     </div>
   );
 }
-

@@ -27,22 +27,22 @@ import { title } from "process";
 // Menu items.
 const items = [
   {
-    title: "Skateboards",
+    title: "winter 2025",
     urls: ["2025", "2024", "2023"],
     icon: <FaShoePrints />,
   },
   {
-    title: "Upper",
+    title: "Summer 2025",
     urls: ["2025", "2024", "2023"],
     icon: <FaHorse />,
   },
   {
-    title: "Pants",
+    title: "Winter 2024",
     urls: ["2025", "2024", "2023"],
     icon: <Fa42Group />,
   },
-  { title: "Hats", urls: ["2025", "2024", "2023"], icon: <FaHeart /> },
-  { title: "Accessories", urls: ["2025", "2024", "2023"], icon: <Fa5 /> },
+  { title: "Summer 2024", urls: ["2025", "2024", "2023"], icon: <FaHeart /> },
+  { title: "Winter 2024", urls: ["2025", "2024", "2023"], icon: <Fa5 /> },
 ];
 
 export function AppSidebar() {
